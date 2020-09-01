@@ -21,7 +21,7 @@ Project West Lake 是 DWeb Shanghai 为配合中国美术学院网络社会研�
 ** 准备工作
 + 携带过来的路由器应该已经更新为最新版本的 OpenWRT(19.07);
 + 确认是否[[https://openwrt.org/docs/guide-user/network/wifi/mesh/batman#does_your_device_support_80211s_or_ibss][支持 Mesh 模式]]；
-+ OpenWRT 配置为AP模式，且自行选一个不容易重名的 ESSID；
++ OpenWRT 配置为 AP 模式，且自行选一个不容易重名的 ESSID；
 + 笔记本安装 [[https://en.wikipedia.org/wiki/Secure_Shell][SSH]] 客户端。
 + 路由器需要接入到互联网，主要有2个方案：
   - 通过 Wifi 上网，笔记本通过有线和路由器直连；
