@@ -1,31 +1,31 @@
 #+title: Project West Lake
 
 * 背景
-Project West Lake是DWeb Shanghai为配合网络社会研究所的年会的网状网络主题，而进行的一系列活动。更具体的说，是为了实现下面两个具体的目标：
+Project West Lake 是 DWeb Shanghai 为配合中国美术学院网络社会研究所的[[https://www.caa-ins.org/archives/6728][”实践智慧之网”年会]] 的网状网络主题，而进行的一系列活动。更具体的说，是为了实现下面两个具体的目标：
 
-+ 年会上的网状网Workshop；
++ 年会上的网状网 Workshop；
 + 年会期间运行一个小规模的网状网，并该在网络运行具体特色的应用。
 
-在年会前，需要进行一些准备工作，包括硬件评估，选型，和生产，软件的研发，workshop的准备以及排练，以及相关的文档工作。
+在年会前，需要进行一些准备工作，包括硬件评估，选型，和生产，软件的研发，Workshop 的准备以及排练，以及相关的文档工作。
 
-* 网状网Workshop
+* 网状网 Workshop
 
-网状网Workshop的内容是让参与者实践网状网的组网。参与者需要自行购买（或者我们预先购买一些）一款支持最新版本OpenWRT，且Wifi驱动支持802.11s模式（mesh模式）的无线路由器，并且携带笔记本。Workshop过程中，指导参与者对路由器进行配置，使所有的路由器作为一个网状网的节点。最后通过某种方式，验证节点之间是能够互相连通的，或者在该临时组好的网状网上运行应用，供大家访问。
+网状网 Workshop 的内容是让参与者实践网状网的组网。参与者需要自行购买（或者我们预先购买一些）一款支持最新版本 OpenWRT，且 Wifi 驱动支持 802.11s 模式（Mesh 模式）的无线路由器，并且携带笔记本。Workshop 过程中，指导参与者对路由器进行配置，使所有的路由器作为一个网状网的节点。最后通过某种方式，验证节点之间是能够互相连通的，或者在该临时组好的网状网上运行应用，供大家访问。
 
-下面是workshop具体的一些步骤，方便起见，假定节点为HLK-7628N模块，其他型号的根据实际情况进行调整。如果workshop排练后发现难度太高，则考虑用下面的部署流程进行替代，跳过下面的“准备工作”、“安装软件”和“配置”部分，此部分文档则作为workshop的资料，供大家参考。
+下面是 Workshop 具体的一些步骤，方便起见，假定节点为 HLK-7628N 模块，其他型号的根据实际情况进行调整。如果 Workshop 排练后发现难度太高，则考虑用下面的部署流程进行替代，跳过下面的“准备工作”、“安装软件”和“配置”部分，此部分文档则作为 Workshop 的资料，供大家参考。
 
 ** 背景介绍
 + 自由软件、开源
 + OpenWRT（来源）
 + OpenMesh
 ** 准备工作
-+ 携带过来的路由器应该已经更新为最新版本的OpenWRT(19.07);
-+ 确认是否[[https://openwrt.org/docs/guide-user/network/wifi/mesh/batman#does_your_device_support_80211s_or_ibss][支持mesh模式]]；
-+ OpenWRT配置为AP模式，且自行选一个不容易重名的ESSID；
-+ 笔记本安装ssh客户端。
++ 携带过来的路由器应该已经更新为最新版本的 OpenWRT(19.07);
++ 确认是否[[https://openwrt.org/docs/guide-user/network/wifi/mesh/batman#does_your_device_support_80211s_or_ibss][支持 Mesh 模式]]；
++ OpenWRT 配置为AP模式，且自行选一个不容易重名的 ESSID；
++ 笔记本安装 [[https://en.wikipedia.org/wiki/Secure_Shell][SSH]] 客户端。
 + 路由器需要接入到互联网，主要有2个方案：
-  - 通过Wifi上网，笔记本通过有线和路由器直连；
-  - 通过有线上网，笔记本通过Wifi和路由器连接；
+  - 通过 Wifi 上网，笔记本通过有线和路由器直连；
+  - 通过有线上网，笔记本通过 Wifi 和路由器连接；
 ** 安装软件
 在路由器能访问互联网的情况下，执行下列命令：
 #+begin_src sh
@@ -41,19 +41,19 @@ opkg install wpad-mesh-openssl
 ** TODO 配置
 下面是大致的配置，待补充细节：
 
-+ 添加mesh模式的Wifi网络接口（network interface）
++ 添加 Mesh 模式的 Wifi 网络接口（Network Interface）
   - Wifi设备的配置
   - 网络接口的配置
-+ 配置batman-adv的网络接口
-+ 配置LAN
-  + batman-adv的网络接口的桥接
-  + 分配固定IP
-+ 删除客户模式（如果有），添加AP模式（如果需要）
-+ DHCP相关配置（待定）
++ 配置 batman-adv 的网络接口
++ 配置 LAN
+  + batman-adv 的网络接口的桥接
+  + 分配固定 IP
++ 删除客户模式（如果有），添加 AP 模式（如果需要）
++ DHCP 相关配置（待定）
 
 ** TODO 测试
 - ping
-- dhcp
+- DHCP
 - 运行应用
 
 ** 参考
@@ -63,7 +63,7 @@ opkg install wpad-mesh-openssl
 * TODO 小规模网状网的部署和运行
 待补充：
 
-- OpenWRT的编译
+- OpenWRT 的编译
   + 选项
   + 默认文件配置
 - 模块出厂的配置修改流程
