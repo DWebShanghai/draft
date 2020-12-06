@@ -8,6 +8,9 @@
 
 * 关于SHLUG的OpenWRT网状网的workshop
 Workshop资料比较完整，其他同学也可以复制这个workshop，例如jiangplus可以在北京重复这个workshop
+- 如何在北京搭建mesh network
+- 如何找到对mesh network有需求的应用场景，使mesh可以长期运行
+- 在国内面临的环境，解决的问题，用户的认知都不一样（城市 vs 农村）
 
 * 关于DWeb Shanghai的活动和发展方向
 - 不需要急于办大的活动，应该在更长的时间尺度上考虑组织的发展；
@@ -17,6 +20,8 @@ Workshop资料比较完整，其他同学也可以复制这个workshop，例如j
 * 关于DWeb Community Call
 - 支持jiangplus同学组织好这个活动
 - 可以近期进行alpha内测，探讨和测试合适的活动流程
+- 需要制定活动的形式，可以人数少一些，DWeb开发者的交流，跨地域
+- 初期在彼此认识的社区成员和朋友之间分享和邀请参与这个活动
 
 * 关于SEIA项目
 - 是近期的主要项目；
@@ -30,3 +35,12 @@ Workshop资料比较完整，其他同学也可以复制这个workshop，例如j
   + 渲染特定界面的消息是由DAG组成；
   + 消息可以通过多种方式持久化，也可以进行过滤；
 - SEIA项目可以和jingplus同学的基于dat项目进行一定程度的融合或进行互操作；
+
+* 关于HyperPress项目：
+- jiangplus最近开发的基于dat协议的静态博客平台
+- 将博客内容通过dat协议发布和共享，自主建站
+- 探索前端框架和去中心化网络的整合方式
+- 更长远的思考：
+  + 前端框架对DWeb的集成
+  + 浏览器对DWeb协议的支持
+
