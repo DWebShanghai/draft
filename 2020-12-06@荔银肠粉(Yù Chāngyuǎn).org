@@ -1,0 +1,32 @@
+#+title: 2020-12-06讨论备忘录(Yù Chāngyuǎn)
+
+- 时间：2020-12-06上午
+- 地点：荔银肠粉（斜土路分店）
+- 人员：刘怿斯，Tmono、jiangplus、Yù Chāngyuǎn
+
+本文档是Yù Chāngyuǎn的发言及参加讨论的主要内容：
+
+* 关于SHLUG的OpenWRT网状网的workshop
+Workshop资料比较完整，其他同学也可以复制这个workshop，例如jiangplus可以在北京重复这个workshop
+
+* 关于DWeb Shanghai的活动和发展方向
+- 不需要急于办大的活动，应该在更长的时间尺度上考虑组织的发展；
+- 短期（1~2年）内应该注重活动的质量，可以每次活动可以是非常小范围的，但是活动的交流应该是比较对等的；
+- DWeb Shanghai应该是线下社区（上海地区或上海周边），应该专注于线下发展；
+
+* 关于DWeb Community Call
+- 支持jiangplus同学组织好这个活动
+- 可以近期进行alpha内测，探讨和测试合适的活动流程
+
+* 关于SEIA项目
+- 是近期的主要项目；
+- 考虑用native messaging替换WebRTC作为通信手段，其中native的helper需要实现下面几项功能：
+  + UDP通信
+  + 本地服务发现
+  + uPnP
+- SEIA的数据模型：
+  + 以节点已发送的消息签名为key的KV系统；
+  + 基于KV系统，最终一致的界面渲染；
+  + 渲染特定界面的消息是由DAG组成；
+  + 消息可以通过多种方式持久化，也可以进行过滤；
+- SEIA项目可以和jingplus同学的基于dat项目进行一定程度的融合或进行互操作；
