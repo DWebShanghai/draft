@@ -4,7 +4,7 @@
 - 地点：荔银肠粉（斜土路分店）
 - 人员：刘怿斯，Tmono、jiangplus、Yù Chāngyuǎn
 
-本文档是Yù Chāngyuǎn的发言及参加讨论的主要内容：
+以下是经过整理的，Yù Chāngyuǎn、Tmono以及jiangplus的讨论及一些想法：
 
 * 关于SHLUG的OpenWRT网状网的workshop
 Workshop资料比较完整，其他同学也可以复制这个workshop，例如jiangplus可以在北京重复这个workshop
@@ -25,7 +25,7 @@ Workshop资料比较完整，其他同学也可以复制这个workshop，例如j
 - 初期在彼此认识的社区成员和朋友之间分享和邀请参与这个活动
 
 * 关于SEIA项目
-- 是近期的主要项目；
+- 是Yù Chāngyuǎn近期的主要项目；
 - 考虑用native messaging替换WebRTC作为通信手段，其中native的helper需要实现下面几项功能：
   + UDP通信
   + 本地服务发现
